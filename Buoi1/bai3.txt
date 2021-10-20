@@ -1,0 +1,12 @@
+Các đặc trưng của Python:
+-Python là ngôn ngữ lập trình bậc cao, hướng đối tượng.
+-Mọi thứ trong python đều là đối tượng (?)
+-Cú pháp đơn giản, dễ học, dễ hiểu.
+-Mã nguồn mở, miễn phí.
+-Có thể chạy trên nhiều hệ điều hành.
+//
+-Không cần định nghĩa kiểu kiểu dữ liệu
+-Các kiểu dữ liệu có thể mang giá trị rất rất lớn, không bị giới hạn (chỉ phụ thuộc xem máy có chạy nổi không)
+-Các khối câu lệnh của Python được xác định bằng thụt lề
+
+
