@@ -10,6 +10,6 @@ else:
         if c == "1":
             cnt += 1
         if cnt == num / 2:
-            cnt = num
+            cnt = num + 1
             print(" ", end="")
 
