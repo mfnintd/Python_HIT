@@ -1,19 +1,13 @@
 s = input("a, Nhập chuỗi: ")
-while (len(s) < 10):
+while len(s) < 10:
     s = input("Nhập lại: ")
 
 print(len(s))
 print(s[2:7])
 
 s = input("b, Nhập chuỗi: ")
-for c in s:
-    if "A" <= c <= "Z":
-        print(c, end="")
-print()
-for c in s:
-    if "a" <= c <= "z":
-        print(c, end="")
-print()
+print(s.upper())
+print(s.lower())
 print(s.replace("b", "g"))
 
 print("c, ", end="")
