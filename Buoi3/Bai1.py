@@ -6,7 +6,7 @@ def xd10(x):
         True if that string has character 0 or 1
         False if it doesn't
     """
-    if '0' in x or '1' in x:
+    if "0" in x or "1" in x:
         return True
     else:
         return False
@@ -15,11 +15,17 @@ def xd10(x):
 def convertIndex01(x):
     """
     :param x:
-        String
+        A string
     :return:
-        Tuple: Indexes of 0, 1 in x
+        A string that have same length
+            1 replace for character '0' and '1'
+            0 replace for the rest
     """
-    return tuple([i for i in range(len(x)) if x[i] in ['0', '1']])
+    x = x.replace("0", "1")
+    otherChars = "23456789"
+    for otherChar in otherChars:
+        x = x.replace(otherChar, "0")
+    return x
 
 
 def ss10(x, y):
@@ -43,7 +49,8 @@ List = input().split()
 listConvert = set()
 
 for Point in List:
-    listConvert.add(convertIndex01(Point))
+    if xd10(Point):
+        listConvert.add(convertIndex01(Point))
 
 print(len(listConvert))
 
