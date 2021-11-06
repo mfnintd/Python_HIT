@@ -41,7 +41,7 @@ def Check(List, x, y):
     :param y:
     :return:
     """
-    if y >= len(List):
+    if y<0 or y >= len(List):
         print("Không chèn được")
     else:
         List.insert(y, x)
